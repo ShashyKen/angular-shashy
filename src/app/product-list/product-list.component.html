@@ -1,4 +1,4 @@
-<h2>Products</h2>
+<h2>Productos</h2>
 
 <div *ngFor="let product of products">
 
@@ -15,6 +15,11 @@
 <button (click)="compartir()">
   Compartir
 </button>
+
+<app-product-alerts
+  [product]="product" 
+  (notify)="notificar()">
+</app-product-alerts>
 
 </div>
 <!-- 
